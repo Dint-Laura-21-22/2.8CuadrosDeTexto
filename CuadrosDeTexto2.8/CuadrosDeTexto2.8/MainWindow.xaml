@@ -1,0 +1,40 @@
+﻿<Window x:Class="CuadrosDeTexto2._8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CuadrosDeTexto2._8"
+        mc:Ignorable="d"
+        Title="Cuadro de texto" Height="450" Width="800"
+        Icon="/assets/32.ico">
+    <Grid>
+        <!--Nombre-->
+
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="88,86,0,0" VerticalAlignment="Top" Height="31" Width="79"/>
+        <TextBox Tag="" x:Name="NombreTextBox" HorizontalAlignment="Left" Height="23" Margin="88,117,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150" KeyUp="TextBox_KeyUp"/>
+        <TextBlock Tag="" x:Name="InformacionNombreDelClienteTextBlock" HorizontalAlignment="Left" Margin="303,117,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" Height="23" Width="131"
+           Visibility="Hidden"/>
+
+        <!--Apellido-->
+
+        <Label Content="Apellido" HorizontalAlignment="Left" Margin="88,158,0,0" VerticalAlignment="Top"/>
+        <TextBox Tag="" x:Name="ApellidoTextBox" HorizontalAlignment="Left" Height="25" Margin="88,189,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150" KeyUp="TextBox_KeyUp"/>
+        <TextBlock x:Name="InformacionApellidoTextBlock" HorizontalAlignment="Left" Margin="303,189,0,0" TextWrapping="Wrap" Text="Apellido del cliente" VerticalAlignment="Top" Height="25" Width="162"
+            Visibility="Hidden"/>
+
+        <!--Edad-->
+
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="88,233,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.623,1.021"/>
+        <TextBox Tag="" x:Name="EdadTextBox" HorizontalAlignment="Left" Height="31" Margin="88,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" KeyUp="EdadTextBox_KeyUp"/>
+        <TextBlock x:Name="ErrorEdadTextBlock" HorizontalAlignment="Left" Margin="303,264,0,0" TextWrapping="Wrap" Text="Edad incorrecta" VerticalAlignment="Top" Height="31" Width="111" Foreground="Red"
+                   Visibility="Hidden"/>
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
